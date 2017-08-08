@@ -31,10 +31,14 @@ body, html, *{
     width: 100%;
     max-width: 128px;
     position:absolute;
-    margin-top:-15%;
+	margin-bottom:1%;
+   
 }
 .pull-right{
     right:10px;
+}
+#logo{
+	margin-top:-4%;
 }
 .pull-left{
     left:10px;
@@ -45,6 +49,9 @@ body, html, *{
         position:relative;
         margin-top:auto;
     }
+	.contact__info a{
+		font-size:large;
+	}
 }
 
 h1{
