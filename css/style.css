@@ -29,7 +29,7 @@ body, html, *{
 
 .pull-left, .pull-right{
     width: 100%;
-    max-width: 128px;
+    max-width: 150px;
     position:absolute;
 	margin-bottom:1%;
    
