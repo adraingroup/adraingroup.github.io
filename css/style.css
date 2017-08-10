@@ -40,7 +40,8 @@ body, html, *{
 #visit{
 	margin-top:-4%;
 	color:white;
-	
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	font-size:48px;
 }
 
 .pull-left{
