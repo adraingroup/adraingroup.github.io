@@ -1,0 +1,155 @@
+@media screen and (orientation: portrait) {
+  wp-action.action3 .wp-graphic {
+    margin-right: 0 !important; }
+    wp-action.action3 .wp-graphic + * {
+      display: none; } }
+
+wp-action {
+  display: block; }
+  wp-action a:link, wp-action a:visited, wp-action a:hover, wp-action a:active {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer; }
+  wp-action.action1 {
+    position: relative; }
+    wp-action.action1 a {
+      display: flex; }
+      wp-action.action1 a > * {
+        height: calc(var(--headerHeight) - 20px);
+        margin-top: 10px;
+        margin-bottom: 10px; }
+      wp-action.action1 a .wp-graphic {
+        min-width: calc(var(--headerHeight) - 20px);
+        max-width: calc(var(--headerHeight) - 20px);
+        margin: 0; }
+      wp-action.action1 a wp-action-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-right: 40px;
+        padding-left: 10px; }
+        wp-action.action1 a wp-action-text wp-title {
+          display: block;
+          font-size: 1rem;
+          white-space: pre; }
+        wp-action.action1 a wp-action-text wp-subtitle {
+          display: block;
+          font-size: 0.8rem; }
+      wp-action.action1 a wp-notification {
+        position: absolute;
+        right: 0;
+        width: 30px;
+        margin: 10px 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+    wp-action.action1:focus wp-action-text, wp-action.action1:focus wp-action-text {
+      font-weight: bold; }
+    wp-action.action1.active {
+      background-color: var(--theme);
+      color: var(--themeText); }
+  wp-action.action2 {
+    position: relative; }
+    wp-action.action2 a {
+      display: flex;
+      color: var(--white);
+      text-shadow: 0 0 10px var(--shadow); }
+      wp-action.action2 a .wp-graphic {
+        width: 80px;
+        height: 80px;
+        margin: 0px; }
+      wp-action.action2 a wp-action-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
+        height: fit-content;
+        bottom: 0;
+        left: 0;
+        align-items: center;
+        padding: 2px;
+        margin: 0;
+        box-sizing: border-box; }
+        wp-action.action2 a wp-action-text wp-title {
+          max-width: 100%;
+          display: block;
+          font-size: 1rem; }
+        wp-action.action2 a wp-action-text wp-subtitle {
+          max-width: 100%;
+          display: block;
+          font-size: 0.8rem; }
+      wp-action.action2 a wp-notification {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 2px; }
+  wp-action.action3 {
+    position: relative;
+    color: var(--text);
+    background-color: var(--white); }
+    wp-action.action3 a {
+      display: flex;
+      padding: 5px 10px;
+      height: 100%;
+      box-sizing: border-box; }
+      wp-action.action3 a .wp-graphic {
+        margin-right: 10px; }
+      wp-action.action3 a wp-action-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%; }
+        wp-action.action3 a wp-action-text wp-title {
+          display: block;
+          font-size: 1rem; }
+        wp-action.action3 a wp-action-text wp-subtitle {
+          display: block;
+          font-size: 0.8rem; }
+      wp-action.action3 a wp-notification {
+        position: absolute;
+        right: 0;
+        top: -20px;
+        width: 20px;
+        height: 20px;
+        background-color: var(--notification);
+        color: var(--white);
+        margin: 10px 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%; }
+    wp-action.action3.active wp-action-text {
+      font-weight: bold; }
+  wp-action.action4 {
+    position: relative;
+    line-height: 1rem; }
+    wp-action.action4 a {
+      display: flex;
+      padding: 0 10px;
+      justify-content: center; }
+      wp-action.action4 a .wp-graphic {
+        margin-right: 10px; }
+      wp-action.action4 a wp-action-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start; }
+        wp-action.action4 a wp-action-text wp-title {
+          display: block;
+          font-size: 1rem; }
+        wp-action.action4 a wp-action-text wp-subtitle {
+          display: block;
+          font-size: 0.8rem; }
+      wp-action.action4 a wp-notification {
+        position: absolute;
+        right: 0;
+        width: 30px;
+        margin: 10px 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+    wp-action.action4.active wp-action-text {
+      font-weight: bold; }

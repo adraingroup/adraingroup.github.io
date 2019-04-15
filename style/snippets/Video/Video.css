@@ -1,0 +1,101 @@
+wp-video {
+  display: block;
+  width: 100%;
+  height: 100%; }
+  wp-video:fullscreen span.download {
+    display: none !important; }
+  wp-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center; }
+  wp-video[class*="videoPlayer"] video::-webkit-media-controls {
+    display: none; }
+  wp-video.videoPlayer_1 wp-video-controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: block;
+    background: linear-gradient(rgba(0, 70, 255, 0) 70%, #000000 100%);
+    color: white;
+    text-shadow: 0 0 16px rgba(0, 0, 0, 0.3); }
+    wp-video.videoPlayer_1 wp-video-controls span {
+      transition: .3s all ease; }
+      wp-video.videoPlayer_1 wp-video-controls span:not(:hover) {
+        opacity: 0.8; }
+      wp-video.videoPlayer_1 wp-video-controls span:hover {
+        opacity: 1; }
+    wp-video.videoPlayer_1 wp-video-controls span.play {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 4em; }
+    wp-video.videoPlayer_1 wp-video-controls span.fullScreen {
+      position: absolute;
+      right: 20px;
+      bottom: 10px;
+      font-size: 1.6em; }
+    wp-video.videoPlayer_1 wp-video-controls span.pictureInPicture {
+      position: absolute;
+      right: 60px;
+      bottom: 10px;
+      font-size: 1.6em; }
+    wp-video.videoPlayer_1 wp-video-controls span.mute {
+      position: absolute;
+      left: 100px;
+      bottom: 10px;
+      font-size: 1.6em; }
+    wp-video.videoPlayer_1 wp-video-controls span.download {
+      position: absolute;
+      bottom: 10px;
+      right: 100px;
+      font-size: 1.6em; }
+    wp-video.videoPlayer_1 wp-video-controls span.progress {
+      display: block;
+      width: calc(100% - 20px);
+      height: 4px;
+      background-color: #252525;
+      bottom: 25px;
+      left: 10px;
+      position: absolute;
+      padding: 15px 0;
+      background-clip: content-box; }
+      wp-video.videoPlayer_1 wp-video-controls span.progress[data-label]:before {
+        display: block;
+        position: absolute;
+        top: 28px;
+        left: 10px;
+        content: attr(data-label); }
+    wp-video.videoPlayer_1 wp-video-controls span.volume {
+      display: block;
+      width: 100px;
+      height: 4px;
+      background-color: #252525;
+      bottom: 4px;
+      left: 130px;
+      position: absolute;
+      padding: 15px 0;
+      background-clip: content-box; }
+    wp-video.videoPlayer_1 wp-video-controls span.progressFill {
+      height: 100%;
+      width: 0%;
+      display: block;
+      background-color: #009688;
+      -webkit-transition: 0.1s all ease;
+      transition: 0.3s all ease; }
+    wp-video.videoPlayer_1 wp-video-controls span:hover > .progressHandle {
+      opacity: 1; }
+    wp-video.videoPlayer_1 wp-video-controls span span.progressHandle {
+      left: 0%;
+      width: 16px;
+      height: 16px;
+      display: block;
+      background-color: #009688;
+      position: absolute;
+      top: 8.5px;
+      border-radius: 50%;
+      transform: translateX(-8px);
+      opacity: 0; }

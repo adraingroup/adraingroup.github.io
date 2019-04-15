@@ -1,46 +1,523 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>AdriaINgroup</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css"> 
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-</head>
-<body>
-<img class="body__splash0" src="img/splash0.jpg" alt="Splash image">
-    <img class="body__splash" src="img/splash.jpg" alt="Splash image consisting of a team of professional real estate agents for Split area">
-    <div class="body__footer">
-        <a href="http://www.njuskalo.hr/agencija/impacto-nekretnine"><img src="img/njuskalo.png" alt=""></a>
-        <a href="https://www.facebook.com/adriaINgroup/ "><img src="img/facebook.png" alt=""></a>
-        <a href="tel:+385989279171"><img src="img/phone.png" alt=""></a>
-        <a href="mailto:denis.crorealestate@gmail.com"><img src="img/mail.png" alt=""></a>
-        <a href="https://www.youtube.com/channel/UC7mi9QecJSagLqbrs-GGMxQ"><img src="img/youtube.png" alt=""></a>
-        <a href="https://www.instagram.com/denishlapcic/"><img src="img/instagram.png" alt=""></a>
-        <a href="https://www.youtube.com/results?search_query=croatia+full+of+life "><img src="img/croatia.png" alt=""></a>
-        <a href="http://www.realestatecroatia.com/hrv/list.asp?id=21943"><img src="img/art.jpg" alt=""></a>
-        <a href="http://www.that-s-it.com/"><img src="img/thatsIt.png" alt=""></a>
-    </div>
-	
-    <img class="pull-right" src="img/hgk.png" alt="Hrvatska gospodarska komora">
-   
-</body>
-<script src="js/script.js"></script>
+<html>
+    <head>
+        <meta charset="utf-8"> <link rel="shortcut icon" href="/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="theme-color" content="#000000"> 
+        <link rel="shortcut icon" href="./favicon.ico">
+        <link rel="manifest" href="./manifest.json">
+        <title>AdriaINgroup</title>
+        <link id="fontAwesome" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link id="googleFonts" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link id="index" rel="stylesheet" type="text/css" href="./style/index.css">
+        <link id="Action" rel="stylesheet" type="text/css" href="./style/snippets/Action/Action.css">
+        <link id="Application" rel="stylesheet" type="text/css" href="./style/snippets/Application/Application.css">
+        <link id="Collection" rel="stylesheet" type="text/css" href="./style/snippets/Collection/Collection.css">
+        <link id="Dropdown" rel="stylesheet" type="text/css" href="./style/snippets/Dropdown/Dropdown.css">
+        <link id="Form" rel="stylesheet" type="text/css" href="./style/snippets/Form/Form.css">
+        <link id="Image" rel="stylesheet" type="text/css" href="./style/snippets/Image/Image.css">
+        <link id="Info" rel="stylesheet" type="text/css" href="./style/snippets/Info/Info.css">
+        <link id="Navigation" rel="stylesheet" type="text/css" href="./style/snippets/Navigation/Navigation.css">
+        <link id="Slideshow" rel="stylesheet" type="text/css" href="./style/snippets/Slideshow/Slideshow.css">
+        <link id="TextSection" rel="stylesheet" type="text/css" href="./style/snippets/TextSection/TextSection.css">
+        <link id="Tree" rel="stylesheet" type="text/css" href="./style/snippets/Tree/Tree.css">
+        <link id="Video" rel="stylesheet" type="text/css" href="./style/snippets/Video/Video.css">
+        <link id="CheckboxInput" rel="stylesheet" type="text/css" href="./style/snippets/Control/Checkbox/CheckboxInput.css">
+        <link id="SelectInput" rel="stylesheet" type="text/css" href="./style/snippets/Control/Select/SelectInput.css">
+        <link id="TextInput" rel="stylesheet" type="text/css" href="./style/snippets/Control/Text/TextInput.css">
+        <style id="customStyle" type="text/css">
+            .centerAtFooter {
+                display: flex;
+                font-size: 2rem;
+                padding: 40px 20px;
+                flex-wrap: wrap;
+            }
+            
+            .partnerGrid wp-action {
+                margin: 30px 12px;
+            }
+            
+            .partnerGrid img {
+                width: unset !important;
+                object-fit: contain;
+            }
+            
+            .centerAtFooter img {
+                height: 130px;
+            }
+            
+            .centerAtFooter > * {
+                width: calc(100% / 3);
+                text-align: center;
+            }
+            
+            wp-info-actions {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+            
+            wp-info-actions wp-action {
+                height: 100% !important;
+                background-color: transparent !important;
+                color: white !important;
+            }
+            
+            wp-info-actions wp-action wp-title {
+                font-size: 1.4rem !important;
+                text-align: center;
+            }
+            
+            .contentData {
+                margin-bottom: 20px;
+                max-width: 1000px;
+                width: 95%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            .scrolled .navigation1.stickOnScroll {
+                background-color: var(--baseDark);
+                box-shadow: 0px 9px 26px -25px #000000;
+            }
+            
+            .postcard {
+                width: 100%;
+                height: calc(30vh - 20px);
+            }
+            
+            wp-action {
+                color: rgba(255, 255, 255, 0.85);
+            }
+            
+            wp-action:hover {
+                color: var(--theme) !important;
+                transition: .2s color ease;
+            }
+            
+            wp-info {
+                min-height: 200px;
+                overflow: hidden !important;
+            }
+            
+            .contentSection {
+                padding-top: 90px;
+                padding-bottom: 90px;
+                padding-left: 10px;
+                padding-right: 10px;
+                border-top: 45px solid var(--baseDark);
+                position: relative;
+                overflow: hidden;
+                width: 100%;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            
+            .contentSectionImage {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background-size: cover;
+                background-position: center;
+                z-index: 0;
+                top: 0;
+                left: 0;
+            }
+            
+            .contentSection wp-text-section {
+                z-index: 1;
+                position: relative;
+            }
+            
+            .contentSection:nth-child(even) {
+                background-color: var(--baseDark);
+            }
+            
+            .contentSection:nth-child(odd) {
+                background-color: rgb(247, 247, 247);
+                color: #333;
+            }
+            
+            wp-collection wp-action {
+                text-transform: uppercase;
+            }
+            
+            .largeText {
+                color: white;
+                font-weight: bold;
+                text-shadow: 0 0 50px rgba(0, 0, 0, 0.72);
+            }
+            
+            .contentSection:nth-child(odd) .largeText {
+                text-align: right;
+            }
+            
+            .textGrid {
+                display: grid;
+                grid-template-columns: 3fr 3fr 2fr 2fr;
+                grid-template-areas: "a a b b" "a a c c" "d d d d";
+            }
+            
+            .textGridA {
+                grid-area: a;
+            }
+            
+            .textGridB {
+                grid-area: b;
+            }
+            
+            .textGridC {
+                grid-area: c;
+            }
+            
+            .textGridD {
+                grid-area: d;
+            }
+            
+            .textGridE {
+                grid-area: e;
+            }
+            .action1, .action1:hover{
+                font-size: 1.6rem;
+                transition: .3s all ease;
+                margin: 10px;
+                border-radius: 15px;
+            }
+
+            .facebook:hover{
+                background-color: #3b5998;
+                color: white !important;
+            }
+
+            .youtube:hover{
+                background-color: #ff0000;
+                color: white !important;
+            }
+
+            .instagram:hover{
+                background:
+
+                    radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),
+                    radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
+                    radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+                    radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
+                    radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+                    radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),
+                    radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
+                    linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+                color: white !important;
+            }
+
+            .telephone:hover{
+                background-color: #075e54;
+                color: white !important;
+            }
+
+            .email:hover{
+                background-color: #239ab9;
+                color: white !important;
+            }
+
+            :root {
+                --theme: #00f2f3;
+                --themeAlt: #F44336;
+                --themeText: #ffffff;
+                --border: #d0d0d0;
+                --borderDark: #a0a0a0;
+                --borderLight: #ececec;
+                --base: #f0f0f0;
+                --baseLight: #ffffff;
+                --baseDark: #1a1a1a;
+                --shadow: rgba(0, 0, 0, 0.2);
+                --highlight: rgba(255, 255, 255, 0.2);
+                --shadowDark: rgba(0, 0, 0, 0.8);
+                --highlightLight: rgba(255, 255, 255, 0.8);
+                --header: rgba(0, 0, 0, 0.6);
+                --headerAlt: #1a1a1a;
+                --headerText: #ffffff;
+                --headerWidth: 280px;
+                --headerHeight: 100px;
+                --footer: #f7f7f7;
+                --footerText: #333;
+                --footerHeight: fit-content;
+                --error: #F44336;
+                --success: #8BC34A;
+                --warning: #ffffff;
+                --notification: #F44336;
+                --white: #ffffff;
+                --black: #000000;
+                --scrollbarThumb: rgba(255, 255, 255, 0.4);
+                --scrollbarActive: #00f2f3;
+                --scrollbarTrack: #1a1a1a;
+                --scrollbarWidth: 10px;
+                --text: #333;
+                --fontSize: 16px;
+                --fontFamily: "Raleway", sans-serif;
+            }
+        </style>
+        
+        <script>
+            let updateScrollTopIfChanged = (event)=>{
+                let scrollTop = event.currentTarget.scrollTop;
+                let app = event.currentTarget
+                if(scrollTop !== 0 && !(/scrolled/gi.test(app.className))){
+                    app.className = `${app.className} scrolled`
+                }else if(scrollTop === 0 && (/scrolled/gi.test(app.className))){
+                    app.className = app.className.replace(/scrolled/gi, '')
+                }
+            }
+            document.addEventListener('DOMContentLoaded', function(){ 
+                document.querySelector('video').play()
+            }, false);
+        </script>
+    </head>
+    <body>
+        <div id="root">
+                
+            <wp-application class="application_1 perspective" onScroll="updateScrollTopIfChanged(event)">
+                <wp-header class="stickyHeader">
+                    <wp-navigation class="navigation_1 stickOnScroll transition">
+                        <wp-navigation-content><img src="./images/adriaingroupLogo.svg" class="undefined wp-graphic" style="margin-left: 20px;">
+                            <wp-action class="action1 facebook">
+                                <a href="https://www.facebook.com/adriaINgroup/">
+                                    <wp-icon class="center brands wp-graphic"></wp-icon>
+                                </a>
+                            </wp-action>
+                            <wp-action class="action1 youtube">
+                                <a href="https://www.youtube.com/channel/UC7mi9QecJSagLqbrs-GGMxQ">
+                                    <wp-icon class="center brands wp-graphic"></wp-icon>
+                                </a>
+                            </wp-action>
+                            <wp-action class="action1 instagram">
+                                <a href="https://www.instagram.com/denishlapcic/">
+                                    <wp-icon class="center brands wp-graphic"></wp-icon>
+                                </a>
+                            </wp-action>
+                            <wp-action class="action1 telephone">
+                                <a href="tel:+385989279171">
+                                    <wp-icon class="center solid wp-graphic"></wp-icon>
+                                </a>
+                            </wp-action>
+                            <wp-action class="action1 email">
+                                <a href="mailto:denis.crorealestate@gmail.com">
+                                    <wp-icon class="center solid wp-graphic"></wp-icon>
+                                </a>
+                            </wp-action>
+                        </wp-navigation-content>
+                    </wp-navigation>
+                </wp-header>
+                <wp-content>
+                    <wp-box class="" style="background-color: rgba(255, 255, 255, 0); width: 100vw; height: 70vh; position: relative; margin-top: calc(var(--headerHeight) * (-1));">
+                        <wp-video class="wp-graphic videoPlayer_0">
+                            <video playsinline autoplay muted loop>
+                                <source src="./videos/rock.mp4" type="video/mp4">
+                            </video>
+                        </wp-video>
+                        <wp-box style="background-color: var(--theme); width: 40vw; height: 45vh; clip-path: polygon(31% 0px, 100% 0px, 100% 100%, 20% 70%); position: absolute; right: 0px; top: var(--headerHeight);"></wp-box>
+                        <wp-box class="textGrid" style="position: absolute; right: 0px; width: 50vw; top: calc(var(--headerHeight) + 10vh);">
+                            <wp-text-section class="textGridA" style="width: 100%; background-color: var(--baseDark); clip-path: polygon(14% 0px, 100% 0px, 86% 100%, 0px 100%); color: var(--baseLight); padding: 0px 11%; box-sizing: border-box; font-size: calc(1.3vw + 1.3vh); position: relative; right: 0px; white-space: pre; height: fit-content; line-height: calc(3vw + 3vh); text-align: center;">LET YOUR DREAMS</wp-text-section>
+                            <wp-text-section class="textGridD" style="color: var(--baseLight); font-size: calc(8vw + 8vh); font-family: 'Kunstler Script'; line-height: 0; padding-left: 0vw; white-space: pre; transform: scaleY(1.3); text-align: center; padding-right: 7vw; text-shadow: rgba(0, 0, 0, 0.34) 0px 3px 19px;">come true</wp-text-section>
+                            <wp-text-section class="textGridB" style="font-size: calc(1vh + 1vw); white-space: pre; padding-left: 1vw;">Best price in market</wp-text-section>
+                            <wp-text-section class="textGridC" style="font-size: calc(1vh + 1vw); white-space: pre;">Hottest property list</wp-text-section>
+                        </wp-box>
+                        <wp-text-section style="color: #00f2f3; font-weight: 600; display: block; bottom: 40px; position: absolute; right: 5vw; font-size: 3vw;">#adriaINgroup</wp-text-section>
+                    </wp-box>
+                    <wp-box class="contentSection" style="border-top-width: 10px; padding: 0px; box-sizing: border-box;">
+                        <wp-collection class="">
+                            <wp-collection-data class="grid" style="grid-template-columns: 1fr 1fr 1fr 1fr; gap: 0px 0px; padding: 0px;">
+                                <wp-info tabindex="0" class="postcard trH"><img src="./images/prodajaNajamKuca.jpg" class="tt scale10percent addBlur wp-graphic">
+                                    <wp-info-container class="tt darkenBackground">
+                                        <wp-main-info></wp-main-info>
+                                        <wp-info-actions class="ttd fadeIn">
+                                            <wp-action class="action3 ">
+                                                <a>
+                                                    <wp-action-text>
+                                                        <wp-title>Prodaja kuća</wp-title>
+                                                    </wp-action-text>
+                                                </a>
+                                            </wp-action>
+                                            <wp-action class="action3 ">
+                                                <a href="https://www.njuskalo.hr/agencija/impacto-nekretnine?categoryId=10919">
+                                                    <wp-action-text>
+                                                        <wp-title>Iznajmljivanje kuća</wp-title>
+                                                    </wp-action-text>
+                                                </a>
+                                            </wp-action>
+                                        </wp-info-actions>
+                                    </wp-info-container>
+                                </wp-info>
+                                <wp-info tabindex="0" class="postcard trH"><img src="./images/prodajaNajamStanova.jpg" class="tt scale10percent addBlur wp-graphic">
+                                    <wp-info-container class="tt darkenBackground">
+                                        <wp-main-info></wp-main-info>
+                                        <wp-info-actions class="ttd fadeIn">
+                                            <wp-action class="action3 ">
+                                                <a href="https://www.njuskalo.hr/agencija/impacto-nekretnine?categoryId=9580">
+                                                    <wp-action-text>
+                                                        <wp-title>Prodaja stanova</wp-title>
+                                                    </wp-action-text>
+                                                </a>
+                                            </wp-action>
+                                            <wp-action class="action3 ">
+                                                <a href="https://www.njuskalo.hr/agencija/impacto-nekretnine?categoryId=10920">
+                                                    <wp-action-text>
+                                                        <wp-title>Iznajmljivanje stanova</wp-title>
+                                                    </wp-action-text>
+                                                </a>
+                                            </wp-action>
+                                        </wp-info-actions>
+                                    </wp-info-container>
+                                </wp-info>
+                                <wp-info tabindex="0" class="postcard trH"><img src="./images/prodajaZemljistaProjekti.jpeg" class="tt scale10percent addBlur wp-graphic">
+                                    <wp-info-container class="tt darkenBackground">
+                                        <wp-main-info></wp-main-info>
+                                        <wp-info-actions class="ttd fadeIn">
+                                            <wp-action class="action3 ">
+                                                <a href="https://www.njuskalo.hr/agencija/impacto-nekretnine?categoryId=9581">
+                                                    <wp-action-text>
+                                                        <wp-title>Prodaja zemljišta i projekata</wp-title>
+                                                    </wp-action-text>
+                                                </a>
+                                            </wp-action>
+                                        </wp-info-actions>
+                                    </wp-info-container>
+                                </wp-info>
+                                <wp-info tabindex="0" class="postcard trH"><img src="./images/conference_room.jpg" class="tt scale10percent addBlur wp-graphic">
+                                    <wp-info-container class="tt darkenBackground">
+                                        <wp-main-info></wp-main-info>
+                                        <wp-info-actions class="ttd fadeIn">
+                                            <wp-action class="action3 ">
+                                                <a href="https://www.njuskalo.hr/agencija/impacto-nekretnine?categoryId=9585">
+                                                    <wp-action-text>
+                                                        <wp-title>Prodaja poslovnih prostora</wp-title>
+                                                    </wp-action-text>
+                                                </a>
+                                            </wp-action>
+                                            <wp-action class="action3 ">
+                                                <a href="https://www.njuskalo.hr/agencija/impacto-nekretnine?categoryId=9839">
+                                                    <wp-action-text>
+                                                        <wp-title>Iznajmljivanje poslovnih prostora</wp-title>
+                                                    </wp-action-text>
+                                                </a>
+                                            </wp-action>
+                                        </wp-info-actions>
+                                    </wp-info-container>
+                                </wp-info>
+                            </wp-collection-data>
+                        </wp-collection>
+                    </wp-box>
+                    <wp-box class="contentSection">
+                        <wp-text-section class="h1 contentData" style="text-transform: uppercase;">Who are we?</wp-text-section>
+                        <wp-text-section class="h2 contentData" style="white-space: unset;">
+                            <p>The team at adriaINgroup are more than real estate agents looking for real estate listings. We are a dedicated team of truly passionate, property professionals who understand our clients’ needs and wants. When making property decisions that impact your family now and in the future, you need a property partner. We understand that your home is an important part of your life, it houses your family, it’s where memories are made and it provides for your future.</p>
+                            <h3>Premium Values</h3>
+                            <p>Integrity — Our agents will always provide you with honest, carefully considered advice. We will ensure you are in the best possible position to make clear decisions. Your success is our principal driver.</p>
+                            <p>Professionalism — real estate is our passion and it demands our focus. We strive to provide a high level of personalised service, whether you are a vendor or a potential purchaser.</p>
+                            <p>Expertise — Service and integrity supported by commercial expertise is where we stands apart. A depth of local knowledge and eye for opportunities, we are your property partner.</p>
+                            <h3>Worldwide</h3>
+                            <p>More connected than ever before, our brand has a network of buyers around the world who see the value in Croatian real estate. Utilise our global connections. Let us help you put together a solid strategy, with a targeted marketing campaign, to attract buyers from around the world. AdriaINgroup is locally focussed, yet globally aware.</p>
+                        </wp-text-section>
+                    </wp-box>
+                    <wp-box class="contentSection trH">
+                        <wp-box class="tt scale10percent addBlur contentSectionImage" style="background-image: linear-gradient(-36deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.73)), url('./images/realEstate.jpg');"></wp-box>
+                        <wp-text-section class="h1 contentData largeText">REAL ESTATE</wp-text-section>
+                        <wp-text-section class="h3 contentData largeText tt fadeIn">Real estate management</wp-text-section>
+                    </wp-box>
+                    <wp-box class="contentSection trH">
+                        <wp-box class="tt scale10percent addBlur contentSectionImage" style="background-image: linear-gradient(-36deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.73)), url('./images/dizajn.jpg');"></wp-box>
+                        <wp-text-section class="h1 contentData largeText">DESIGN</wp-text-section>
+                        <wp-text-section class="h3 contentData largeText tt fadeIn">Designing the interior of clients' properties according to their preference</wp-text-section>
+                    </wp-box>
+                    <wp-box class="contentSection trH">
+                        <wp-box class="tt scale10percent addBlur contentSectionImage" style="background-image: linear-gradient(64deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.73)), url('./images/development.jpg');"></wp-box>
+                        <wp-text-section class="h1 contentData largeText">DEVELOPMENT</wp-text-section>
+                        <wp-text-section class="h3 contentData largeText tt fadeIn">Investment and development according to the clients' needs</wp-text-section>
+                    </wp-box>
+                    <wp-box class="contentSection trH">
+                        <wp-box class="tt scale10percent addBlur contentSectionImage" style="background-image: linear-gradient(64deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.73)), url('./images/vip_area.jpg');"></wp-box>
+                        <wp-text-section class="h1 contentData largeText">VIP SERVICE</wp-text-section>
+                        <wp-text-section class="h3 contentData largeText tt fadeIn">Providing a top VIP services for the most demanding clients</wp-text-section>
+                    </wp-box>
+                    <wp-box class="contentSection trH">
+                        <wp-box class="tt scale10percent addBlur contentSectionImage" style="background-image: linear-gradient(-36deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.73)), url('./images/marketing.jpg');"></wp-box>
+                        <wp-text-section class="h1 contentData largeText">MARKETING</wp-text-section>
+                        <wp-text-section class="h3 contentData largeText tt fadeIn">Marketing programs for clients' real estates, properties and businesses</wp-text-section>
+                    </wp-box>
+                    <wp-box class="contentSection trH" style="background-color: white;">
+                        <wp-text-section class="h1 contentData">OUR PARTNERS</wp-text-section>
+                        <wp-collection class="contentData partnerGrid">
+                            <wp-collection-data class="" style="display: flex; flex-wrap: wrap; justify-content: space-evenly;">
+                                <wp-action class="action2 ">
+                                    <a href="http://www.a3-doo.com/"><img src="http://www.a3-doo.com/slike/logo1.jpg" class="undefined wp-graphic"></a>
+                                </wp-action>
+                                <wp-action class="action2 ">
+                                    <a href="https://ancona-grupa.hr/"><img src="http://ancona-grupa.hr/wp-content/uploads/ag_logo_mobile-01.png" class="undefined wp-graphic"></a>
+                                </wp-action>
+                                <wp-action class="action2 ">
+                                    <a href="https://visokopotkrovlje.hr/"><img src="./images/visokoPotkrovlje.png" class="undefined wp-graphic"></a>
+                                </wp-action>
+                                <wp-action class="action2 ">
+                                    <a href="https://www.quatrocompany.hr"><img src="https://www.quatrocompany.hr/images/logo/logo-quatro-company.png" class="undefined wp-graphic"></a>
+                                </wp-action>
+                                <wp-action class="action2 ">
+                                    <a href="http://www.superured.com/"><img src="http://www.superured.com/assets/superured/logo_large-660c1165acfd37abcca276870d03ddd91f895f27b9abb0eca50eb17741d4c35f.png" class="undefined wp-graphic"></a>
+                                </wp-action>
+                                <wp-action class="action2 ">
+                                    <a href="https://www.split-transfers.com"><img src="https://www.split-transfers.com/images/split-transfers-logo.svg" class="undefined wp-graphic"></a>
+                                </wp-action>
+                                <wp-action class="action2 ">
+                                    <a href="https://www.erstebank.hr"><img src="https://www.erstebank.hr/content/dam/hr/ebc/common/logos/erste-bank.svg" class="undefined wp-graphic"></a>
+                                </wp-action>
+                                <wp-action class="action2 ">
+                                    <a href="https://www.club-vanilla.hr"><img src="./images/vanilla.png" class="undefined wp-graphic"></a>
+                                </wp-action>
+                                <wp-action class="action2 ">
+                                    <a href="https://www.bazeni-radic.hr"><img src="https://www.bazeni-radic.hr/wp-content/uploads/2018/07/bazeni-radic-logo-prodaja-bazenske-opreme.png" class="undefined wp-graphic"></a>
+                                </wp-action>
+                                <wp-action class="action2 ">
+                                    <a href="http://piel.hr"><img src="http://piel.hr/wp-content/uploads/2014/11/pielnewlogo.png" class="undefined wp-graphic"></a>
+                                </wp-action>
+                                <wp-action class="action2 ">
+                                    <a href="https://www.croatiastart.com/"><img src="./images/croatiaStart.png" class="undefined wp-graphic"></a>
+                                </wp-action>
+                                <wp-action class="action2 ">
+                                    <a href="https://www.ugooprema.com"><img src="https://www.ugooprema.com/img/logo.png" class="undefined wp-graphic"></a>
+                                </wp-action>
+                                <wp-action class="action2 ">
+                                    <a href="http://heros.hr"><img src="http://heros.hr/wp-content/uploads/2016/06/logo-1.png" class="undefined wp-graphic"></a>
+                                </wp-action>
+                                <wp-action class="action2 ">
+                                    <a href="https://www.croatiaweek.com"><img src="https://www.croatiaweek.com/wp-content/themes/croatiaweek-dfranc/images/logo.svg" class="undefined wp-graphic"></a>
+                                </wp-action>
+                                <wp-action class="action2 ">
+                                    <a href="http://www.realestatecroatia.com/hrv/list.asp?id=21943"><img src="http://www.realestatecroatia.com/grafika/REC_logo_novo.gif" class="undefined wp-graphic"></a>
+                                </wp-action>
+                                <wp-action class="action2 ">
+                                    <a href="http://katastar.hr/dgu/"><img src="http://katastar.hr/dgu/tpl/img/logo_katastar.png" class="undefined wp-graphic"></a>
+                                </wp-action>
+                            </wp-collection-data>
+                        </wp-collection>
+                    </wp-box>
+                </wp-content>
+                <wp-footer>
+                    <wp-box class="contentSection">
+                        <wp-box class="centerAtFooter">
+                            <wp-text-section>#adriaINgroup</wp-text-section>
+                            <wp-text-section>IMPACTO d.o.o</wp-text-section>
+                            <wp-text-section style='font-family: sans-serif;'>+385 98 927 9171<br>+385 91 644 4481</wp-text-section>
+                        </wp-box>
+                        <wp-box class="centerAtFooter">
+                            <wp-action class="undefined ">
+                                <a style="cursor: auto;"><img src="./images/adriaingroupLogo.svg" class="undefined wp-graphic"></a>
+                            </wp-action>
+                            <wp-action class="undefined ">
+                                <a href="https://www.hgk.hr/"><img src="./images/hgk.png" class="undefined wp-graphic" style="object-fit: contain;"></a>
+                            </wp-action>
+                            <wp-action class="undefined ">
+                                <a href="https://www.youtube.com/results?search_query=croatia+full+of+life"><img src="./images/croatia_full_of_life.png" class="undefined wp-graphic"></a>
+                            </wp-action>
+                        </wp-box>
+                    </wp-box>
+                </wp-footer>
+            </wp-application>
+        </div>
+    </body>
 </html>
