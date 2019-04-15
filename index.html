@@ -19,17 +19,29 @@
         <link id="Video" rel="stylesheet" type="text/css" href="./style/snippets/Video/Video.css">
         <style id="customStyle" type="text/css">
 
+            @font-face {
+                font-family: 'Kunstler Script';
+                src: url("./fonts/KUNSTLER.ttf");
+            }
             @media (orientation: portrait) {
-            .grid {
-                grid-template-columns: 1fr !important; }
-            .textGrid, .centerAtFooter > * {
-                width: 100vw !important; }
-            wp-video + wp-box {
-                width: 75vw !important;
-                clip-path: polygon(46% 0px, 100% 0px, 100% 100%, 20% 70%) !important; }
-            wp-action.action1 a .wp-graphic {
-                min-width: 40px !important;
-                margin: 0px 0px !important; } }
+                .hideInMobile{
+                    display: none !important;
+                }
+                .grid {
+                    grid-template-columns: 1fr !important; 
+                }
+                .textGrid, .centerAtFooter > * {
+                    width: 100vw !important; 
+                }
+                wp-video + wp-box {
+                    width: 75vw !important;
+                    clip-path: polygon(46% 0px, 100% 0px, 100% 100%, 20% 70%) !important; 
+                }
+                wp-action.action1 a .wp-graphic {
+                    min-width: 40px !important;
+                    margin: 0px 0px !important; 
+                } 
+            }
             .centerAtFooter {
                 display: flex;
                 font-size: 2rem;
@@ -281,7 +293,11 @@
             <wp-application class="application_1 perspective" onScroll="updateScrollTopIfChanged(event)">
                 <wp-header class="stickyHeader">
                     <wp-navigation class="navigation_1 stickOnScroll transition">
-                        <wp-navigation-content><img src="./images/adriaingroupLogo.svg" class="undefined wp-graphic" style="margin-left: 20px;">
+                        <wp-navigation-content>
+                            <wp-logo style="margin-left: 20px;display: inline-flex;justify-content: center;align-items: center;margin-right: auto;">
+                                    <img src="./images/adriaingroupLogo.svg" class="undefined wp-graphic">
+                                    <wp-text-section class='hideInMobile' style="color: white;font-weight: 600;display: block;font-size: calc(1.6vw + 1.6vh);">#adria<span style="color: #00f2f3;">IN</span>group</wp-text-section>
+                            </wp-logo>
                             <wp-action class="action1 facebook">
                                 <a href="https://www.facebook.com/adriaINgroup/">
                                     <wp-icon class="center brands wp-graphic"></wp-icon>
@@ -324,7 +340,6 @@
                             <wp-text-section class="textGridB" style="font-size: calc(1vh + 1vw); white-space: pre; padding-left: 1vw;">Best price in market</wp-text-section>
                             <wp-text-section class="textGridC" style="font-size: calc(1vh + 1vw); white-space: pre;">Hottest property list</wp-text-section>
                         </wp-box>
-                        <wp-text-section style="color: #00f2f3; font-weight: 600; display: block; bottom: 40px; position: absolute; right: 5vw; font-size: 3vw;">#adriaINgroup</wp-text-section>
                     </wp-box>
                     <wp-box class="contentSection" style="border-top-width: 10px; padding: 0px; box-sizing: border-box;">
                         <wp-collection class="">
