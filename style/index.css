@@ -159,7 +159,10 @@ wp-scroll-down {
 .trF.tt.fadeOut:not(.inactiveUser):focus, .trF:not(.inactiveUser):focus:not(.tt) > .tt.fadeOut, .trF:not(.inactiveUser):focus:not(.tt) .ttd.fadeOut, .trF:not(.inactiveUser):focus ~ .tta.fadeOut,
 .trFW.tt.fadeOut:not(.inactiveUser):focus-within, .trFW:not(.inactiveUser):focus-within:not(.tt) > .tt.fadeOut, .trFW:not(.inactiveUser):focus-within:not(.tt) .ttd.fadeOut, .trFW:not(.inactiveUser):focus-within ~ .tta.fadeOut,
 .trA.active.tt.fadeOut:not(.inactiveUser), .trA:not(.inactiveUser).active:not(.tt) > .tt.fadeOut, .trA:not(.inactiveUser).active:not(.tt) .ttd.fadeOut, .trA:not(.inactiveUser).active ~ .tta.fadeOut {
-  opacity: 0; }
+  opacity: 0; 
+  transition: opacity ease;
+  pointer-events: none;
+}
 
 .fadeIn:not(.tt):not(.tta),
 .trH.tt.fadeIn:not(.inactiveUser):hover, .trH:not(.inactiveUser):hover:not(.tt) > .tt.fadeIn, .trH:not(.inactiveUser):hover:not(.tt) .ttd.fadeIn, .trH:not(.inactiveUser):hover ~ .tta.fadeIn,
@@ -170,7 +173,9 @@ wp-scroll-down {
 .trF.tt.fadeOut:not(:focus), .trF:not(:focus):not(.tt) > .tt.fadeOut, .trF:not(:focus):not(.tt) .ttd.fadeOut, .trF:not(:focus) ~ .tta.fadeOut,
 .trFW.tt.fadeOut:not(:focus-within), .trFW:not(:focus-within):not(.tt) > .tt.fadeOut, .trFW:not(:focus-within):not(.tt) .ttd.fadeOut, .trFW:not(:focus-within) ~ .tta.fadeOut,
 .trA.tt.fadeOut:not(.active), .trA:not(.active):not(.tt) > .tt.fadeOut, .trA:not(.active):not(.tt) .ttd.fadeOut, .trA:not(.active) ~ .tta.fadeOut {
-  opacity: 1; }
+  opacity: 1; 
+  transition: .3s opacity ease;
+}
 
 /************************************************************
   SIZE MODIFIER
@@ -184,8 +189,11 @@ wp-scroll-down {
 .trF.tt.scaleOutY:not(.inactiveUser):focus, .trF:not(.inactiveUser):focus:not(.tt) > .tt.scaleOutY, .trF:not(.inactiveUser):focus:not(.tt) .ttd.scaleOutY, .trF:not(.inactiveUser):focus ~ .tta.scaleOutY,
 .trFW.tt.scaleOutY:not(.inactiveUser):focus-within, .trFW:not(.inactiveUser):focus-within:not(.tt) > .tt.scaleOutY, .trFW:not(.inactiveUser):focus-within:not(.tt) .ttd.scaleOutY, .trFW:not(.inactiveUser):focus-within ~ .tta.scaleOutY,
 .trA.active.tt.scaleOutY:not(.inactiveUser), .trA:not(.inactiveUser).active:not(.tt) > .tt.scaleOutY, .trA:not(.inactiveUser).active:not(.tt) .ttd.scaleOutY, .trA:not(.inactiveUser).active ~ .tta.scaleOutY {
-  transform: scaleY(1) translate3d(0, 0, 0);
-  backface-visibility: hidden; }
+  transform: scaleY(1) translate3d(0, 0, 0) translateZ(0);
+  backface-visibility: hidden; 
+  transition: .3s transform ease;
+  pointer-events: none;
+}
 
 .scaleInY:not(.tt):not(.tta),
 .trH.tt.scaleInY:not(.inactiveUser):hover, .trH:not(.inactiveUser):hover:not(.tt) > .tt.scaleInY, .trH:not(.inactiveUser):hover:not(.tt) .ttd.scaleInY, .trH:not(.inactiveUser):hover ~ .tta.scaleInY,
@@ -196,8 +204,10 @@ wp-scroll-down {
 .trF.tt.scaleOutY:not(:focus), .trF:not(:focus):not(.tt) > .tt.scaleOutY, .trF:not(:focus):not(.tt) .ttd.scaleOutY, .trF:not(:focus) ~ .tta.scaleOutY,
 .trFW.tt.scaleOutY:not(:focus-within), .trFW:not(:focus-within):not(.tt) > .tt.scaleOutY, .trFW:not(:focus-within):not(.tt) .ttd.scaleOutY, .trFW:not(:focus-within) ~ .tta.scaleOutY,
 .trA.tt.scaleOutY:not(.active), .trA:not(.active):not(.tt) > .tt.scaleOutY, .trA:not(.active):not(.tt) .ttd.scaleOutY, .trA:not(.active) ~ .tta.scaleOutY {
-  transform: scaleY(0) translate3d(0, 0, 0);
-  backface-visibility: hidden; }
+  transform: scaleY(0) translate3d(0, 0, 0) translateZ(0);
+  backface-visibility: hidden; 
+  transition: .3s transform ease;
+}
 
 .inactiveUser.tt.scaleInX, .inactiveUser:not(.tt) > .tt.scaleInX, .inactiveUser:not(.tt) .ttd.scaleInX, .inactiveUser ~ .tta.scaleInX,
 .trH.tt.scaleInX:not(:hover), .trH:not(:hover):not(.tt) > .tt.scaleInX, .trH:not(:hover):not(.tt) .ttd.scaleInX, .trH:not(:hover) ~ .tta.scaleInX,
@@ -208,8 +218,11 @@ wp-scroll-down {
 .trF.tt.scaleOutX:not(.inactiveUser):focus, .trF:not(.inactiveUser):focus:not(.tt) > .tt.scaleOutX, .trF:not(.inactiveUser):focus:not(.tt) .ttd.scaleOutX, .trF:not(.inactiveUser):focus ~ .tta.scaleOutX,
 .trFW.tt.scaleOutX:not(.inactiveUser):focus-within, .trFW:not(.inactiveUser):focus-within:not(.tt) > .tt.scaleOutX, .trFW:not(.inactiveUser):focus-within:not(.tt) .ttd.scaleOutX, .trFW:not(.inactiveUser):focus-within ~ .tta.scaleOutX,
 .trA.active.tt.scaleOutX:not(.inactiveUser), .trA:not(.inactiveUser).active:not(.tt) > .tt.scaleOutX, .trA:not(.inactiveUser).active:not(.tt) .ttd.scaleOutX, .trA:not(.inactiveUser).active ~ .tta.scaleOutX {
-  transform: scaleX(1) translate3d(0, 0, 0);
-  backface-visibility: hidden; }
+  transform: scaleX(1) translate3d(0, 0, 0) translateZ(0);
+  backface-visibility: hidden;
+  transition: .3s transform ease;
+  pointer-events: none;
+}
 
 .scaleInX:not(.tt):not(.tta),
 .trH.tt.scaleInX:not(.inactiveUser):hover, .trH:not(.inactiveUser):hover:not(.tt) > .tt.scaleInX, .trH:not(.inactiveUser):hover:not(.tt) .ttd.scaleInX, .trH:not(.inactiveUser):hover ~ .tta.scaleInX,
@@ -220,8 +233,10 @@ wp-scroll-down {
 .trF.tt.scaleOutX:not(:focus), .trF:not(:focus):not(.tt) > .tt.scaleOutX, .trF:not(:focus):not(.tt) .ttd.scaleOutX, .trF:not(:focus) ~ .tta.scaleOutX,
 .trFW.tt.scaleOutX:not(:focus-within), .trFW:not(:focus-within):not(.tt) > .tt.scaleOutX, .trFW:not(:focus-within):not(.tt) .ttd.scaleOutX, .trFW:not(:focus-within) ~ .tta.scaleOutX,
 .trA.tt.scaleOutX:not(.active), .trA:not(.active):not(.tt) > .tt.scaleOutX, .trA:not(.active):not(.tt) .ttd.scaleOutX, .trA:not(.active) ~ .tta.scaleOutX {
-  transform: scaleX(0) translate3d(0, 0, 0);
-  backface-visibility: hidden; }
+  transform: scaleX(0) translate3d(0, 0, 0) translateZ(0);
+  backface-visibility: hidden;
+  transition: .3s transform ease;
+}
 
 .inactiveUser.tt.scale10percent, .inactiveUser:not(.tt) > .tt.scale10percent, .inactiveUser:not(.tt) .ttd.scale10percent, .inactiveUser ~ .tta.scale10percent,
 .trH.tt.scale10percent:not(:hover), .trH:not(:hover):not(.tt) > .tt.scale10percent, .trH:not(:hover):not(.tt) .ttd.scale10percent, .trH:not(:hover) ~ .tta.scale10percent,
@@ -236,8 +251,11 @@ wp-scroll-down {
 .trF.tt.scaleOut:not(.inactiveUser):focus, .trF:not(.inactiveUser):focus:not(.tt) > .tt.scaleOut, .trF:not(.inactiveUser):focus:not(.tt) .ttd.scaleOut, .trF:not(.inactiveUser):focus ~ .tta.scaleOut,
 .trFW.tt.scaleOut:not(.inactiveUser):focus-within, .trFW:not(.inactiveUser):focus-within:not(.tt) > .tt.scaleOut, .trFW:not(.inactiveUser):focus-within:not(.tt) .ttd.scaleOut, .trFW:not(.inactiveUser):focus-within ~ .tta.scaleOut,
 .trA.active.tt.scaleOut:not(.inactiveUser), .trA:not(.inactiveUser).active:not(.tt) > .tt.scaleOut, .trA:not(.inactiveUser).active:not(.tt) .ttd.scaleOut, .trA:not(.inactiveUser).active ~ .tta.scaleOut {
-  transform: scale(1) translate3d(0, 0, 0);
-  backface-visibility: hidden; }
+  transform: scale(1) translate3d(0, 0, 0) translateZ(0);
+  backface-visibility: hidden;
+  transition: .3s transform ease;
+  pointer-events: none;
+}
 
 .scaleIn:not(.tt):not(.tta),
 .trH.tt.scaleIn:not(.inactiveUser):hover, .trH:not(.inactiveUser):hover:not(.tt) > .tt.scaleIn, .trH:not(.inactiveUser):hover:not(.tt) .ttd.scaleIn, .trH:not(.inactiveUser):hover ~ .tta.scaleIn,
@@ -248,246 +266,23 @@ wp-scroll-down {
 .trF.tt.scaleOut:not(:focus), .trF:not(:focus):not(.tt) > .tt.scaleOut, .trF:not(:focus):not(.tt) .ttd.scaleOut, .trF:not(:focus) ~ .tta.scaleOut,
 .trFW.tt.scaleOut:not(:focus-within), .trFW:not(:focus-within):not(.tt) > .tt.scaleOut, .trFW:not(:focus-within):not(.tt) .ttd.scaleOut, .trFW:not(:focus-within) ~ .tta.scaleOut,
 .trA.tt.scaleOut:not(.active), .trA:not(.active):not(.tt) > .tt.scaleOut, .trA:not(.active):not(.tt) .ttd.scaleOut, .trA:not(.active) ~ .tta.scaleOut {
-  transform: scale(0) translate3d(0, 0, 0);
-  backface-visibility: hidden; }
+  transform: scale(0) translate3d(0, 0, 0) translateZ(0);
+  backface-visibility: hidden;
+  transition: .3s transform ease;
+}
 
 .scale10percent:not(.tt):not(.tta),
 .trH.tt.scale10percent:not(.inactiveUser):hover, .trH:not(.inactiveUser):hover:not(.tt) > .tt.scale10percent, .trH:not(.inactiveUser):hover:not(.tt) .ttd.scale10percent, .trH:not(.inactiveUser):hover ~ .tta.scale10percent,
 .trF.tt.scale10percent:not(.inactiveUser):focus, .trF:not(.inactiveUser):focus:not(.tt) > .tt.scale10percent, .trF:not(.inactiveUser):focus:not(.tt) .ttd.scale10percent, .trF:not(.inactiveUser):focus ~ .tta.scale10percent,
 .trFW.tt.scale10percent:not(.inactiveUser):focus-within, .trFW:not(.inactiveUser):focus-within:not(.tt) > .tt.scale10percent, .trFW:not(.inactiveUser):focus-within:not(.tt) .ttd.scale10percent, .trFW:not(.inactiveUser):focus-within ~ .tta.scale10percent,
 .trA.active.tt.scale10percent:not(.inactiveUser), .trA:not(.inactiveUser).active:not(.tt) > .tt.scale10percent, .trA:not(.inactiveUser).active:not(.tt) .ttd.scale10percent, .trA:not(.inactiveUser).active ~ .tta.scale10percent {
-  transform: scale(1.1) translate3d(0, 0, 0);
-  backface-visibility: hidden; }
+  transform: scale(1.1) translate3d(0, 0, 0) translateZ(0);
+  backface-visibility: hidden;
+  transition: .3s transform ease;
+  pointer-events: none;
+}
 
-/************************************************************
-  POSITION MODIFIER
-************************************************************/
-.slideToLeft:not(.tt):not(.tta),
-.trH.tt.slideToLeft:not(.inactiveUser):hover, .trH:not(.inactiveUser):hover:not(.tt) > .tt.slideToLeft, .trH:not(.inactiveUser):hover:not(.tt) .ttd.slideToLeft, .trH:not(.inactiveUser):hover ~ .tta.slideToLeft,
-.trF.tt.slideToLeft:not(.inactiveUser):focus, .trF:not(.inactiveUser):focus:not(.tt) > .tt.slideToLeft, .trF:not(.inactiveUser):focus:not(.tt) .ttd.slideToLeft, .trF:not(.inactiveUser):focus ~ .tta.slideToLeft,
-.trFW.tt.slideToLeft:not(.inactiveUser):focus-within, .trFW:not(.inactiveUser):focus-within:not(.tt) > .tt.slideToLeft, .trFW:not(.inactiveUser):focus-within:not(.tt) .ttd.slideToLeft, .trFW:not(.inactiveUser):focus-within ~ .tta.slideToLeft,
-.trA.active.tt.slideToLeft:not(.inactiveUser), .trA:not(.inactiveUser).active:not(.tt) > .tt.slideToLeft, .trA:not(.inactiveUser).active:not(.tt) .ttd.slideToLeft, .trA:not(.inactiveUser).active ~ .tta.slideToLeft, .inactiveUser.tt.slideFromLeft, .inactiveUser:not(.tt) > .tt.slideFromLeft, .inactiveUser:not(.tt) .ttd.slideFromLeft, .inactiveUser ~ .tta.slideFromLeft,
-.trH.tt.slideFromLeft:not(:hover), .trH:not(:hover):not(.tt) > .tt.slideFromLeft, .trH:not(:hover):not(.tt) .ttd.slideFromLeft, .trH:not(:hover) ~ .tta.slideFromLeft,
-.trF.tt.slideFromLeft:not(:focus), .trF:not(:focus):not(.tt) > .tt.slideFromLeft, .trF:not(:focus):not(.tt) .ttd.slideFromLeft, .trF:not(:focus) ~ .tta.slideFromLeft,
-.trFW.tt.slideFromLeft:not(:focus-within), .trFW:not(:focus-within):not(.tt) > .tt.slideFromLeft, .trFW:not(:focus-within):not(.tt) .ttd.slideFromLeft, .trFW:not(:focus-within) ~ .tta.slideFromLeft,
-.trA.tt.slideFromLeft:not(.active), .trA:not(.active):not(.tt) > .tt.slideFromLeft, .trA:not(.active):not(.tt) .ttd.slideFromLeft, .trA:not(.active) ~ .tta.slideFromLeft {
-  transform: translateX(-100%); }
 
-.slideToRight:not(.tt):not(.tta),
-.trH.tt.slideToRight:not(.inactiveUser):hover, .trH:not(.inactiveUser):hover:not(.tt) > .tt.slideToRight, .trH:not(.inactiveUser):hover:not(.tt) .ttd.slideToRight, .trH:not(.inactiveUser):hover ~ .tta.slideToRight,
-.trF.tt.slideToRight:not(.inactiveUser):focus, .trF:not(.inactiveUser):focus:not(.tt) > .tt.slideToRight, .trF:not(.inactiveUser):focus:not(.tt) .ttd.slideToRight, .trF:not(.inactiveUser):focus ~ .tta.slideToRight,
-.trFW.tt.slideToRight:not(.inactiveUser):focus-within, .trFW:not(.inactiveUser):focus-within:not(.tt) > .tt.slideToRight, .trFW:not(.inactiveUser):focus-within:not(.tt) .ttd.slideToRight, .trFW:not(.inactiveUser):focus-within ~ .tta.slideToRight,
-.trA.active.tt.slideToRight:not(.inactiveUser), .trA:not(.inactiveUser).active:not(.tt) > .tt.slideToRight, .trA:not(.inactiveUser).active:not(.tt) .ttd.slideToRight, .trA:not(.inactiveUser).active ~ .tta.slideToRight, .inactiveUser.tt.slideFromRight, .inactiveUser:not(.tt) > .tt.slideFromRight, .inactiveUser:not(.tt) .ttd.slideFromRight, .inactiveUser ~ .tta.slideFromRight,
-.trH.tt.slideFromRight:not(:hover), .trH:not(:hover):not(.tt) > .tt.slideFromRight, .trH:not(:hover):not(.tt) .ttd.slideFromRight, .trH:not(:hover) ~ .tta.slideFromRight,
-.trF.tt.slideFromRight:not(:focus), .trF:not(:focus):not(.tt) > .tt.slideFromRight, .trF:not(:focus):not(.tt) .ttd.slideFromRight, .trF:not(:focus) ~ .tta.slideFromRight,
-.trFW.tt.slideFromRight:not(:focus-within), .trFW:not(:focus-within):not(.tt) > .tt.slideFromRight, .trFW:not(:focus-within):not(.tt) .ttd.slideFromRight, .trFW:not(:focus-within) ~ .tta.slideFromRight,
-.trA.tt.slideFromRight:not(.active), .trA:not(.active):not(.tt) > .tt.slideFromRight, .trA:not(.active):not(.tt) .ttd.slideFromRight, .trA:not(.active) ~ .tta.slideFromRight {
-  transform: translateX(100%); }
-
-.inactiveUser.tt.slideToLeft, .inactiveUser:not(.tt) > .tt.slideToLeft, .inactiveUser:not(.tt) .ttd.slideToLeft, .inactiveUser ~ .tta.slideToLeft,
-.trH.tt.slideToLeft:not(:hover), .trH:not(:hover):not(.tt) > .tt.slideToLeft, .trH:not(:hover):not(.tt) .ttd.slideToLeft, .trH:not(:hover) ~ .tta.slideToLeft,
-.trF.tt.slideToLeft:not(:focus), .trF:not(:focus):not(.tt) > .tt.slideToLeft, .trF:not(:focus):not(.tt) .ttd.slideToLeft, .trF:not(:focus) ~ .tta.slideToLeft,
-.trFW.tt.slideToLeft:not(:focus-within), .trFW:not(:focus-within):not(.tt) > .tt.slideToLeft, .trFW:not(:focus-within):not(.tt) .ttd.slideToLeft, .trFW:not(:focus-within) ~ .tta.slideToLeft,
-.trA.tt.slideToLeft:not(.active), .trA:not(.active):not(.tt) > .tt.slideToLeft, .trA:not(.active):not(.tt) .ttd.slideToLeft, .trA:not(.active) ~ .tta.slideToLeft, .inactiveUser.tt.slideToRight, .inactiveUser:not(.tt) > .tt.slideToRight, .inactiveUser:not(.tt) .ttd.slideToRight, .inactiveUser ~ .tta.slideToRight,
-.trH.tt.slideToRight:not(:hover), .trH:not(:hover):not(.tt) > .tt.slideToRight, .trH:not(:hover):not(.tt) .ttd.slideToRight, .trH:not(:hover) ~ .tta.slideToRight,
-.trF.tt.slideToRight:not(:focus), .trF:not(:focus):not(.tt) > .tt.slideToRight, .trF:not(:focus):not(.tt) .ttd.slideToRight, .trF:not(:focus) ~ .tta.slideToRight,
-.trFW.tt.slideToRight:not(:focus-within), .trFW:not(:focus-within):not(.tt) > .tt.slideToRight, .trFW:not(:focus-within):not(.tt) .ttd.slideToRight, .trFW:not(:focus-within) ~ .tta.slideToRight,
-.trA.tt.slideToRight:not(.active), .trA:not(.active):not(.tt) > .tt.slideToRight, .trA:not(.active):not(.tt) .ttd.slideToRight, .trA:not(.active) ~ .tta.slideToRight, .slideFromLeft:not(.tt):not(.tta),
-.trH.tt.slideFromLeft:not(.inactiveUser):hover, .trH:not(.inactiveUser):hover:not(.tt) > .tt.slideFromLeft, .trH:not(.inactiveUser):hover:not(.tt) .ttd.slideFromLeft, .trH:not(.inactiveUser):hover ~ .tta.slideFromLeft,
-.trF.tt.slideFromLeft:not(.inactiveUser):focus, .trF:not(.inactiveUser):focus:not(.tt) > .tt.slideFromLeft, .trF:not(.inactiveUser):focus:not(.tt) .ttd.slideFromLeft, .trF:not(.inactiveUser):focus ~ .tta.slideFromLeft,
-.trFW.tt.slideFromLeft:not(.inactiveUser):focus-within, .trFW:not(.inactiveUser):focus-within:not(.tt) > .tt.slideFromLeft, .trFW:not(.inactiveUser):focus-within:not(.tt) .ttd.slideFromLeft, .trFW:not(.inactiveUser):focus-within ~ .tta.slideFromLeft,
-.trA.active.tt.slideFromLeft:not(.inactiveUser), .trA:not(.inactiveUser).active:not(.tt) > .tt.slideFromLeft, .trA:not(.inactiveUser).active:not(.tt) .ttd.slideFromLeft, .trA:not(.inactiveUser).active ~ .tta.slideFromLeft, .slideFromRight:not(.tt):not(.tta),
-.trH.tt.slideFromRight:not(.inactiveUser):hover, .trH:not(.inactiveUser):hover:not(.tt) > .tt.slideFromRight, .trH:not(.inactiveUser):hover:not(.tt) .ttd.slideFromRight, .trH:not(.inactiveUser):hover ~ .tta.slideFromRight,
-.trF.tt.slideFromRight:not(.inactiveUser):focus, .trF:not(.inactiveUser):focus:not(.tt) > .tt.slideFromRight, .trF:not(.inactiveUser):focus:not(.tt) .ttd.slideFromRight, .trF:not(.inactiveUser):focus ~ .tta.slideFromRight,
-.trFW.tt.slideFromRight:not(.inactiveUser):focus-within, .trFW:not(.inactiveUser):focus-within:not(.tt) > .tt.slideFromRight, .trFW:not(.inactiveUser):focus-within:not(.tt) .ttd.slideFromRight, .trFW:not(.inactiveUser):focus-within ~ .tta.slideFromRight,
-.trA.active.tt.slideFromRight:not(.inactiveUser), .trA:not(.inactiveUser).active:not(.tt) > .tt.slideFromRight, .trA:not(.inactiveUser).active:not(.tt) .ttd.slideFromRight, .trA:not(.inactiveUser).active ~ .tta.slideFromRight {
-  transform: translateX(0%); }
-
-.slideToTop:not(.tt):not(.tta),
-.trH.tt.slideToTop:not(.inactiveUser):hover, .trH:not(.inactiveUser):hover:not(.tt) > .tt.slideToTop, .trH:not(.inactiveUser):hover:not(.tt) .ttd.slideToTop, .trH:not(.inactiveUser):hover ~ .tta.slideToTop,
-.trF.tt.slideToTop:not(.inactiveUser):focus, .trF:not(.inactiveUser):focus:not(.tt) > .tt.slideToTop, .trF:not(.inactiveUser):focus:not(.tt) .ttd.slideToTop, .trF:not(.inactiveUser):focus ~ .tta.slideToTop,
-.trFW.tt.slideToTop:not(.inactiveUser):focus-within, .trFW:not(.inactiveUser):focus-within:not(.tt) > .tt.slideToTop, .trFW:not(.inactiveUser):focus-within:not(.tt) .ttd.slideToTop, .trFW:not(.inactiveUser):focus-within ~ .tta.slideToTop,
-.trA.active.tt.slideToTop:not(.inactiveUser), .trA:not(.inactiveUser).active:not(.tt) > .tt.slideToTop, .trA:not(.inactiveUser).active:not(.tt) .ttd.slideToTop, .trA:not(.inactiveUser).active ~ .tta.slideToTop, .inactiveUser.tt.slideFromTop, .inactiveUser:not(.tt) > .tt.slideFromTop, .inactiveUser:not(.tt) .ttd.slideFromTop, .inactiveUser ~ .tta.slideFromTop,
-.trH.tt.slideFromTop:not(:hover), .trH:not(:hover):not(.tt) > .tt.slideFromTop, .trH:not(:hover):not(.tt) .ttd.slideFromTop, .trH:not(:hover) ~ .tta.slideFromTop,
-.trF.tt.slideFromTop:not(:focus), .trF:not(:focus):not(.tt) > .tt.slideFromTop, .trF:not(:focus):not(.tt) .ttd.slideFromTop, .trF:not(:focus) ~ .tta.slideFromTop,
-.trFW.tt.slideFromTop:not(:focus-within), .trFW:not(:focus-within):not(.tt) > .tt.slideFromTop, .trFW:not(:focus-within):not(.tt) .ttd.slideFromTop, .trFW:not(:focus-within) ~ .tta.slideFromTop,
-.trA.tt.slideFromTop:not(.active), .trA:not(.active):not(.tt) > .tt.slideFromTop, .trA:not(.active):not(.tt) .ttd.slideFromTop, .trA:not(.active) ~ .tta.slideFromTop {
-  transform: translateY(-100%); }
-
-.slideToBottom:not(.tt):not(.tta),
-.trH.tt.slideToBottom:not(.inactiveUser):hover, .trH:not(.inactiveUser):hover:not(.tt) > .tt.slideToBottom, .trH:not(.inactiveUser):hover:not(.tt) .ttd.slideToBottom, .trH:not(.inactiveUser):hover ~ .tta.slideToBottom,
-.trF.tt.slideToBottom:not(.inactiveUser):focus, .trF:not(.inactiveUser):focus:not(.tt) > .tt.slideToBottom, .trF:not(.inactiveUser):focus:not(.tt) .ttd.slideToBottom, .trF:not(.inactiveUser):focus ~ .tta.slideToBottom,
-.trFW.tt.slideToBottom:not(.inactiveUser):focus-within, .trFW:not(.inactiveUser):focus-within:not(.tt) > .tt.slideToBottom, .trFW:not(.inactiveUser):focus-within:not(.tt) .ttd.slideToBottom, .trFW:not(.inactiveUser):focus-within ~ .tta.slideToBottom,
-.trA.active.tt.slideToBottom:not(.inactiveUser), .trA:not(.inactiveUser).active:not(.tt) > .tt.slideToBottom, .trA:not(.inactiveUser).active:not(.tt) .ttd.slideToBottom, .trA:not(.inactiveUser).active ~ .tta.slideToBottom, .inactiveUser.tt.slideFromBottom, .inactiveUser:not(.tt) > .tt.slideFromBottom, .inactiveUser:not(.tt) .ttd.slideFromBottom, .inactiveUser ~ .tta.slideFromBottom,
-.trH.tt.slideFromBottom:not(:hover), .trH:not(:hover):not(.tt) > .tt.slideFromBottom, .trH:not(:hover):not(.tt) .ttd.slideFromBottom, .trH:not(:hover) ~ .tta.slideFromBottom,
-.trF.tt.slideFromBottom:not(:focus), .trF:not(:focus):not(.tt) > .tt.slideFromBottom, .trF:not(:focus):not(.tt) .ttd.slideFromBottom, .trF:not(:focus) ~ .tta.slideFromBottom,
-.trFW.tt.slideFromBottom:not(:focus-within), .trFW:not(:focus-within):not(.tt) > .tt.slideFromBottom, .trFW:not(:focus-within):not(.tt) .ttd.slideFromBottom, .trFW:not(:focus-within) ~ .tta.slideFromBottom,
-.trA.tt.slideFromBottom:not(.active), .trA:not(.active):not(.tt) > .tt.slideFromBottom, .trA:not(.active):not(.tt) .ttd.slideFromBottom, .trA:not(.active) ~ .tta.slideFromBottom {
-  transform: translateY(100%); }
-
-.inactiveUser.tt.slideToTop, .inactiveUser:not(.tt) > .tt.slideToTop, .inactiveUser:not(.tt) .ttd.slideToTop, .inactiveUser ~ .tta.slideToTop,
-.trH.tt.slideToTop:not(:hover), .trH:not(:hover):not(.tt) > .tt.slideToTop, .trH:not(:hover):not(.tt) .ttd.slideToTop, .trH:not(:hover) ~ .tta.slideToTop,
-.trF.tt.slideToTop:not(:focus), .trF:not(:focus):not(.tt) > .tt.slideToTop, .trF:not(:focus):not(.tt) .ttd.slideToTop, .trF:not(:focus) ~ .tta.slideToTop,
-.trFW.tt.slideToTop:not(:focus-within), .trFW:not(:focus-within):not(.tt) > .tt.slideToTop, .trFW:not(:focus-within):not(.tt) .ttd.slideToTop, .trFW:not(:focus-within) ~ .tta.slideToTop,
-.trA.tt.slideToTop:not(.active), .trA:not(.active):not(.tt) > .tt.slideToTop, .trA:not(.active):not(.tt) .ttd.slideToTop, .trA:not(.active) ~ .tta.slideToTop, .inactiveUser.tt.slideToBottom, .inactiveUser:not(.tt) > .tt.slideToBottom, .inactiveUser:not(.tt) .ttd.slideToBottom, .inactiveUser ~ .tta.slideToBottom,
-.trH.tt.slideToBottom:not(:hover), .trH:not(:hover):not(.tt) > .tt.slideToBottom, .trH:not(:hover):not(.tt) .ttd.slideToBottom, .trH:not(:hover) ~ .tta.slideToBottom,
-.trF.tt.slideToBottom:not(:focus), .trF:not(:focus):not(.tt) > .tt.slideToBottom, .trF:not(:focus):not(.tt) .ttd.slideToBottom, .trF:not(:focus) ~ .tta.slideToBottom,
-.trFW.tt.slideToBottom:not(:focus-within), .trFW:not(:focus-within):not(.tt) > .tt.slideToBottom, .trFW:not(:focus-within):not(.tt) .ttd.slideToBottom, .trFW:not(:focus-within) ~ .tta.slideToBottom,
-.trA.tt.slideToBottom:not(.active), .trA:not(.active):not(.tt) > .tt.slideToBottom, .trA:not(.active):not(.tt) .ttd.slideToBottom, .trA:not(.active) ~ .tta.slideToBottom, .slideFromTop:not(.tt):not(.tta),
-.trH.tt.slideFromTop:not(.inactiveUser):hover, .trH:not(.inactiveUser):hover:not(.tt) > .tt.slideFromTop, .trH:not(.inactiveUser):hover:not(.tt) .ttd.slideFromTop, .trH:not(.inactiveUser):hover ~ .tta.slideFromTop,
-.trF.tt.slideFromTop:not(.inactiveUser):focus, .trF:not(.inactiveUser):focus:not(.tt) > .tt.slideFromTop, .trF:not(.inactiveUser):focus:not(.tt) .ttd.slideFromTop, .trF:not(.inactiveUser):focus ~ .tta.slideFromTop,
-.trFW.tt.slideFromTop:not(.inactiveUser):focus-within, .trFW:not(.inactiveUser):focus-within:not(.tt) > .tt.slideFromTop, .trFW:not(.inactiveUser):focus-within:not(.tt) .ttd.slideFromTop, .trFW:not(.inactiveUser):focus-within ~ .tta.slideFromTop,
-.trA.active.tt.slideFromTop:not(.inactiveUser), .trA:not(.inactiveUser).active:not(.tt) > .tt.slideFromTop, .trA:not(.inactiveUser).active:not(.tt) .ttd.slideFromTop, .trA:not(.inactiveUser).active ~ .tta.slideFromTop, .slideFromBottom:not(.tt):not(.tta),
-.trH.tt.slideFromBottom:not(.inactiveUser):hover, .trH:not(.inactiveUser):hover:not(.tt) > .tt.slideFromBottom, .trH:not(.inactiveUser):hover:not(.tt) .ttd.slideFromBottom, .trH:not(.inactiveUser):hover ~ .tta.slideFromBottom,
-.trF.tt.slideFromBottom:not(.inactiveUser):focus, .trF:not(.inactiveUser):focus:not(.tt) > .tt.slideFromBottom, .trF:not(.inactiveUser):focus:not(.tt) .ttd.slideFromBottom, .trF:not(.inactiveUser):focus ~ .tta.slideFromBottom,
-.trFW.tt.slideFromBottom:not(.inactiveUser):focus-within, .trFW:not(.inactiveUser):focus-within:not(.tt) > .tt.slideFromBottom, .trFW:not(.inactiveUser):focus-within:not(.tt) .ttd.slideFromBottom, .trFW:not(.inactiveUser):focus-within ~ .tta.slideFromBottom,
-.trA.active.tt.slideFromBottom:not(.inactiveUser), .trA:not(.inactiveUser).active:not(.tt) > .tt.slideFromBottom, .trA:not(.inactiveUser).active:not(.tt) .ttd.slideFromBottom, .trA:not(.inactiveUser).active ~ .tta.slideFromBottom {
-  transform: translateY(0%); }
-
-.slideFromLeftToRight-enter {
-  transform: translateX(-100%); }
-
-.slideFromLeftToRight-enter-active {
-  transform: translateX(0%);
-  transition: transform 1s ease; }
-
-.slideFromLeftToRight-leave {
-  transform: translateX(0%); }
-
-.slideFromLeftToRight-leave-active {
-  transform: translateX(100%);
-  transition: transform 1s ease; }
-
-.slideFromRightToLeft-enter {
-  transform: translateX(100%); }
-
-.slideFromRightToLeft-enter-active {
-  transform: translateX(0%);
-  transition: transform 1s ease; }
-
-.slideFromRightToLeft-leave {
-  transform: translateX(0%); }
-
-.slideFromRightToLeft-leave-active {
-  transform: translateX(-100%);
-  transition: transform 1s ease; }
-
-/************************************************************
-  CLIP MODIFIER
-************************************************************/
-.restoreFromEdgesHorizontal:not(.tt):not(.tta),
-.trH:not(.inactiveUser):hover.tt.restoreFromEdgesHorizontal, .trH:not(.inactiveUser):hover:not(.tt) > .tt.restoreFromEdgesHorizontal, .trH:not(.inactiveUser):hover:not(.tt) .ttd.restoreFromEdgesHorizontal, .trH:not(.inactiveUser):hover ~ .tta.restoreFromEdgesHorizontal,
-.trF:not(.inactiveUser):focus.tt.restoreFromEdgesHorizontal, .trF:not(.inactiveUser):focus:not(.tt) > .tt.restoreFromEdgesHorizontal, .trF:not(.inactiveUser):focus:not(.tt) .ttd.restoreFromEdgesHorizontal, .trF:not(.inactiveUser):focus ~ .tta.restoreFromEdgesHorizontal,
-.trFW:not(.inactiveUser):focus-within.tt.restoreFromEdgesHorizontal, .trFW:not(.inactiveUser):focus-within:not(.tt) > .tt.restoreFromEdgesHorizontal, .trFW:not(.inactiveUser):focus-within:not(.tt) .ttd.restoreFromEdgesHorizontal, .trFW:not(.inactiveUser):focus-within ~ .tta.restoreFromEdgesHorizontal,
-.trA:not(.inactiveUser).active.tt.restoreFromEdgesHorizontal, .trA:not(.inactiveUser).active:not(.tt) > .tt.restoreFromEdgesHorizontal, .trA:not(.inactiveUser).active:not(.tt) .ttd.restoreFromEdgesHorizontal, .trA:not(.inactiveUser).active ~ .tta.restoreFromEdgesHorizontal {
-  animation-name: restoreCutFromEdgesToCenterHorizontal; }
-
-.inactiveUser.tt.restoreFromEdgesHorizontal, .inactiveUser:not(.tt) > .tt.restoreFromEdgesHorizontal, .inactiveUser:not(.tt) .ttd.restoreFromEdgesHorizontal, .inactiveUser ~ .tta.restoreFromEdgesHorizontal,
-.trH:not(:hover).tt.restoreFromEdgesHorizontal, .trH:not(:hover):not(.tt) > .tt.restoreFromEdgesHorizontal, .trH:not(:hover):not(.tt) .ttd.restoreFromEdgesHorizontal, .trH:not(:hover) ~ .tta.restoreFromEdgesHorizontal,
-.trF:not(:focus).tt.restoreFromEdgesHorizontal, .trF:not(:focus):not(.tt) > .tt.restoreFromEdgesHorizontal, .trF:not(:focus) ~ .tta.restoreFromEdgesHorizontal,
-.trFW:not(:focus-within).tt.restoreFromEdgesHorizontal, .trFW:not(:focus-within):not(.tt) > .tt.restoreFromEdgesHorizontal, .trFW:not(:focus-within):not(.tt) .ttd.restoreFromEdgesHorizontal, .trFW:not(:focus-within) ~ .tta.restoreFromEdgesHorizontal,
-.trA:not(.active).tt.restoreFromEdgesHorizontal, .trA:not(.active):not(.tt) > .tt.restoreFromEdgesHorizontal, .trA:not(.active):not(.tt) .ttd.restoreFromEdgesHorizontal, .trA:not(.active) ~ .tta.restoreFromEdgesHorizontal {
-  animation-name: cutFromEdgesToCenterHorizontal; }
-
-.restoreFromCenterHorizontal:not(.tt):not(.tta),
-.trH:not(.inactiveUser):hover.tt.restoreFromCenterHorizontal, .trH:not(.inactiveUser):hover:not(.tt) > .tt.restoreFromCenterHorizontal, .trH:not(.inactiveUser):hover:not(.tt) .ttd.restoreFromCenterHorizontal, .trH:not(.inactiveUser):hover ~ .tta.restoreFromCenterHorizontal,
-.trF:not(.inactiveUser):focus.tt.restoreFromCenterHorizontal, .trF:not(.inactiveUser):focus:not(.tt) > .tt.restoreFromCenterHorizontal, .trF:not(.inactiveUser):focus:not(.tt) .ttd.restoreFromCenterHorizontal, .trF:not(.inactiveUser):focus ~ .tta.restoreFromCenterHorizontal,
-.trFW:not(.inactiveUser):focus-within.tt.restoreFromCenterHorizontal, .trFW:not(.inactiveUser):focus-within:not(.tt) > .tt.restoreFromCenterHorizontal, .trFW:not(.inactiveUser):focus-within:not(.tt) .ttd.restoreFromCenterHorizontal, .trFW:not(.inactiveUser):focus-within ~ .tta.restoreFromCenterHorizontal,
-.trA:not(.inactiveUser).active.tt.restoreFromCenterHorizontal, .trA:not(.inactiveUser).active:not(.tt) > .tt.restoreFromCenterHorizontal, .trA:not(.inactiveUser).active:not(.tt) .ttd.restoreFromCenterHorizontal, .trA:not(.inactiveUser).active ~ .tta.restoreFromCenterHorizontal {
-  animation-name: restoreCutFromCenterToEdgesHorizontal; }
-
-.inactiveUser.tt.restoreFromCenterHorizontal, .inactiveUser:not(.tt) > .tt.restoreFromCenterHorizontal, .inactiveUser:not(.tt) .ttd.restoreFromCenterHorizontal, .inactiveUser ~ .tta.restoreFromCenterHorizontal,
-.trH:not(:hover).tt.restoreFromCenterHorizontal, .trH:not(:hover):not(.tt) > .tt.restoreFromCenterHorizontal, .trH:not(:hover):not(.tt) .ttd.restoreFromCenterHorizontal, .trH:not(:hover) ~ .tta.restoreFromCenterHorizontal,
-.trF:not(:focus).tt.restoreFromCenterHorizontal, .trF:not(:focus):not(.tt) > .tt.restoreFromCenterHorizontal, .trF:not(:focus) ~ .tta.restoreFromCenterHorizontal,
-.trFW:not(:focus-within).tt.restoreFromCenterHorizontal, .trFW:not(:focus-within):not(.tt) > .tt.restoreFromCenterHorizontal, .trFW:not(:focus-within):not(.tt) .ttd.restoreFromCenterHorizontal, .trFW:not(:focus-within) ~ .tta.restoreFromCenterHorizontal,
-.trA:not(.active).tt.restoreFromCenterHorizontal, .trA:not(.active):not(.tt) > .tt.restoreFromCenterHorizontal, .trA:not(.active):not(.tt) .ttd.restoreFromCenterHorizontal, .trA:not(.active) ~ .tta.restoreFromCenterHorizontal {
-  animation-name: cutFromCenterToEdgesHorizontal; }
-
-@keyframes cutFromCenterToEdgesHorizontal {
-  0% {
-    clip-path: polygon(0% 0%, 0% 100%, 50% 100%, 50% 0%, 50% 0%, 50% 100%, 100% 100%, 100% 0%); }
-  100% {
-    clip-path: polygon(0% 0%, 0% 100%, 0% 100%, 0% 0%, 100% 0%, 100% 100%, 100% 100%, 100% 0%); } }
-
-@keyframes cutFromEdgesToCenterHorizontal {
-  0% {
-    clip-path: polygon(0% 0%, 0% 100%, 50% 100%, 50% 0%, 50% 0%, 50% 100%, 100% 100%, 100% 0%); }
-  100% {
-    clip-path: polygon(50% 0%, 50% 100%, 50% 100%, 50% 0%, 50% 0%, 50% 100%, 50% 100%, 50% 0%); } }
-
-@keyframes restoreCutFromCenterToEdgesHorizontal {
-  0% {
-    clip-path: polygon(50% 0%, 50% 100%, 50% 100%, 50% 0%, 50% 0%, 50% 100%, 50% 100%, 50% 0%); }
-  100% {
-    clip-path: polygon(0% 0%, 0% 100%, 50% 100%, 50% 0%, 50% 0%, 50% 100%, 100% 100%, 100% 0%); } }
-
-@keyframes restoreCutFromEdgesToCenterHorizontal {
-  0% {
-    clip-path: polygon(0% 0%, 0% 100%, 0% 100%, 0% 0%, 100% 0%, 100% 100%, 100% 100%, 100% 0%); }
-  100% {
-    clip-path: polygon(0% 0%, 0% 100%, 50% 100%, 50% 0%, 50% 0%, 50% 100%, 100% 100%, 100% 0%); } }
-
-.restoreFromEdgesDiagonal:not(.tt):not(.tta),
-.trH:not(.inactiveUser):hover.tt.restoreFromEdgesDiagonal, .trH:not(.inactiveUser):hover:not(.tt) > .tt.restoreFromEdgesDiagonal, .trH:not(.inactiveUser):hover:not(.tt) .ttd.restoreFromEdgesDiagonal, .trH:not(.inactiveUser):hover ~ .tta.restoreFromEdgesDiagonal,
-.trF:not(.inactiveUser):focus.tt.restoreFromEdgesDiagonal, .trF:not(.inactiveUser):focus:not(.tt) > .tt.restoreFromEdgesDiagonal, .trF:not(.inactiveUser):focus:not(.tt) .ttd.restoreFromEdgesDiagonal, .trF:not(.inactiveUser):focus ~ .tta.restoreFromEdgesDiagonal,
-.trFW:not(.inactiveUser):focus-within.tt.restoreFromEdgesDiagonal, .trFW:not(.inactiveUser):focus-within:not(.tt) > .tt.restoreFromEdgesDiagonal, .trFW:not(.inactiveUser):focus-within:not(.tt) .ttd.restoreFromEdgesDiagonal, .trFW:not(.inactiveUser):focus-within ~ .tta.restoreFromEdgesDiagonal,
-.trA:not(.inactiveUser).active.tt.restoreFromEdgesDiagonal, .trA:not(.inactiveUser).active:not(.tt) > .tt.restoreFromEdgesDiagonal, .trA:not(.inactiveUser).active:not(.tt) .ttd.restoreFromEdgesDiagonal, .trA:not(.inactiveUser).active ~ .tta.restoreFromEdgesDiagonal {
-  animation-name: restoreFromCenterToEdgesDiagonal; }
-
-.inactiveUser.tt.restoreFromEdgesDiagonal, .inactiveUser:not(.tt) > .tt.restoreFromEdgesDiagonal, .inactiveUser:not(.tt) .ttd.restoreFromEdgesDiagonal, .inactiveUser ~ .tta.restoreFromEdgesDiagonal,
-.trH:not(:hover).tt.restoreFromEdgesDiagonal, .trH:not(:hover):not(.tt) > .tt.restoreFromEdgesDiagonal, .trH:not(:hover):not(.tt) .ttd.restoreFromEdgesDiagonal, .trH:not(:hover) ~ .tta.restoreFromEdgesDiagonal,
-.trF:not(:focus).tt.restoreFromEdgesDiagonal, .trF:not(:focus):not(.tt) > .tt.restoreFromEdgesDiagonal, .trF:not(:focus) ~ .tta.restoreFromEdgesDiagonal,
-.trFW:not(:focus-within).tt.restoreFromEdgesDiagonal, .trFW:not(:focus-within):not(.tt) > .tt.restoreFromEdgesDiagonal, .trFW:not(:focus-within):not(.tt) .ttd.restoreFromEdgesDiagonal, .trFW:not(:focus-within) ~ .tta.restoreFromEdgesDiagonal,
-.trA:not(.active).tt.restoreFromEdgesDiagonal, .trA:not(.active):not(.tt) > .tt.restoreFromEdgesDiagonal, .trA:not(.active):not(.tt) .ttd.restoreFromEdgesDiagonal, .trA:not(.active) ~ .tta.restoreFromEdgesDiagonal {
-  animation-name: cutFromCenterToEdgesDiagonal; }
-
-.restoreFromCenterDiagonal:not(.tt):not(.tta),
-.trH:not(.inactiveUser):hover.tt.restoreFromCenterDiagonal, .trH:not(.inactiveUser):hover:not(.tt) > .tt.restoreFromCenterDiagonal, .trH:not(.inactiveUser):hover:not(.tt) .ttd.restoreFromCenterDiagonal, .trH:not(.inactiveUser):hover ~ .tta.restoreFromCenterDiagonal,
-.trF:not(.inactiveUser):focus.tt.restoreFromCenterDiagonal, .trF:not(.inactiveUser):focus:not(.tt) > .tt.restoreFromCenterDiagonal, .trF:not(.inactiveUser):focus:not(.tt) .ttd.restoreFromCenterDiagonal, .trF:not(.inactiveUser):focus ~ .tta.restoreFromCenterDiagonal,
-.trFW:not(.inactiveUser):focus-within.tt.restoreFromCenterDiagonal, .trFW:not(.inactiveUser):focus-within:not(.tt) > .tt.restoreFromCenterDiagonal, .trFW:not(.inactiveUser):focus-within:not(.tt) .ttd.restoreFromCenterDiagonal, .trFW:not(.inactiveUser):focus-within ~ .tta.restoreFromCenterDiagonal,
-.trA:not(.inactiveUser).active.tt.restoreFromCenterDiagonal, .trA:not(.inactiveUser).active:not(.tt) > .tt.restoreFromCenterDiagonal, .trA:not(.inactiveUser).active:not(.tt) .ttd.restoreFromCenterDiagonal, .trA:not(.inactiveUser).active ~ .tta.restoreFromCenterDiagonal {
-  animation-name: restoreFromEdgesToCenterDiagonal; }
-
-.inactiveUser.tt.restoreFromCenterDiagonal, .inactiveUser:not(.tt) > .tt.restoreFromCenterDiagonal, .inactiveUser:not(.tt) .ttd.restoreFromCenterDiagonal, .inactiveUser ~ .tta.restoreFromCenterDiagonal,
-.trH:not(:hover).tt.restoreFromCenterDiagonal, .trH:not(:hover):not(.tt) > .tt.restoreFromCenterDiagonal, .trH:not(:hover):not(.tt) .ttd.restoreFromCenterDiagonal, .trH:not(:hover) ~ .tta.restoreFromCenterDiagonal,
-.trF:not(:focus).tt.restoreFromCenterDiagonal, .trF:not(:focus):not(.tt) > .tt.restoreFromCenterDiagonal, .trF:not(:focus) ~ .tta.restoreFromCenterDiagonal,
-.trFW:not(:focus-within).tt.restoreFromCenterDiagonal, .trFW:not(:focus-within):not(.tt) > .tt.restoreFromCenterDiagonal, .trFW:not(:focus-within):not(.tt) .ttd.restoreFromCenterDiagonal, .trFW:not(:focus-within) ~ .tta.restoreFromCenterDiagonal,
-.trA:not(.active).tt.restoreFromCenterDiagonal, .trA:not(.active):not(.tt) > .tt.restoreFromCenterDiagonal, .trA:not(.active):not(.tt) .ttd.restoreFromCenterDiagonal, .trA:not(.active) ~ .tta.restoreFromCenterDiagonal {
-  animation-name: cutFromEdgesToCenterDiagonal; }
-
-@keyframes cutFromCenterToEdgesDiagonal {
-  0% {
-    clip-path: polygon(0% 0, 0 0%, 0 100%, 100% 0, 100% 0, 100% 0%, 0% 100%, 100% 100%, 100% 100%, 100% 0); }
-  100% {
-    clip-path: polygon(0% 0, 0 0%, 0 0%, 0% 0, 100% 0, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 0); } }
-
-@keyframes cutFromEdgesToCenterDiagonal {
-  0% {
-    clip-path: polygon(0% 0, 0 0%, 0 100%, 100% 0, 100% 0, 100% 0%, 0% 100%, 100% 100%, 100% 100%, 100% 0); }
-  100% {
-    clip-path: polygon(100% 0, 0 100%, 0 100%, 100% 0, 100% 0, 100% 0%, 0% 100%, 0% 100%, 100% 0%, 100% 0); } }
-
-@keyframes restoreFromEdgesToCenterDiagonal {
-  0% {
-    clip-path: polygon(0% 0, 0 0%, 0 0%, 0% 0, 100% 0, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 0); }
-  100% {
-    clip-path: polygon(0% 0, 0 0%, 0 100%, 100% 0, 100% 0, 100% 0%, 0% 100%, 100% 100%, 100% 100%, 100% 0); } }
-
-@keyframes restoreFromCenterToEdgesDiagonal {
-  0% {
-    clip-path: polygon(100% 0, 0 100%, 0 100%, 100% 0, 100% 0, 100% 0%, 0% 100%, 0% 100%, 100% 0%, 100% 0); }
-  100% {
-    clip-path: polygon(0% 0, 0 0%, 0 100%, 100% 0, 100% 0, 100% 0%, 0% 100%, 100% 100%, 100% 100%, 100% 0); } }
-
-/************************************************************
-  SHADOW MODIFIER
-************************************************************/
-/************************************************************
-  ANIMATION MODIFIER
-************************************************************/
-/************************************************************
-  TEXT SHADOW MODIFIER
-************************************************************/
 /************************************************************
   SHAPE MODIFIER
 ************************************************************/
@@ -586,6 +381,27 @@ wp-scroll-down {
 /************************************************************
   OTHER MODIFIERS
 ************************************************************/
+.inactiveUser.tt.addBlur, .inactiveUser:not(.tt) > .tt.addBlur, .inactiveUser:not(.tt) .ttd.addBlur, .inactiveUser ~ .tta.addBlur,
+.trH.tt.addBlur:not(:hover), .trH:not(:hover):not(.tt) > .tt.addBlur, .trH:not(:hover):not(.tt) .ttd.addBlur, .trH:not(:hover) ~ .tta.addBlur,
+.trF.tt.addBlur:not(:focus), .trF:not(:focus):not(.tt) > .tt.addBlur, .trF:not(:focus):not(.tt) .ttd.addBlur, .trF:not(:focus) ~ .tta.addBlur,
+.trFW.tt.addBlur:not(:focus-within), .trFW:not(:focus-within):not(.tt) > .tt.addBlur, .trFW:not(:focus-within):not(.tt) .ttd.addBlur, .trFW:not(:focus-within) ~ .tta.addBlur,
+.trA.tt.addBlur:not(.active), .trA:not(.active):not(.tt) > .tt.addBlur, .trA:not(.active):not(.tt) .ttd.addBlur, .trA:not(.active) ~ .tta.addBlur, .removeBlur:not(.tt):not(.tta),
+.trH.tt.removeBlur:not(.inactiveUser):hover, .trH:not(.inactiveUser):hover:not(.tt) > .tt.removeBlur, .trH:not(.inactiveUser):hover:not(.tt) .ttd.removeBlur, .trH:not(.inactiveUser):hover ~ .tta.removeBlur,
+.trF.tt.removeBlur:not(.inactiveUser):focus, .trF:not(.inactiveUser):focus:not(.tt) > .tt.removeBlur, .trF:not(.inactiveUser):focus:not(.tt) .ttd.removeBlur, .trF:not(.inactiveUser):focus ~ .tta.removeBlur,
+.trFW.tt.removeBlur:not(.inactiveUser):focus-within, .trFW:not(.inactiveUser):focus-within:not(.tt) > .tt.removeBlur, .trFW:not(.inactiveUser):focus-within:not(.tt) .ttd.removeBlur, .trFW:not(.inactiveUser):focus-within ~ .tta.removeBlur,
+.trA.active.tt.removeBlur:not(.inactiveUser), .trA:not(.inactiveUser).active:not(.tt) > .tt.removeBlur, .trA:not(.inactiveUser).active:not(.tt) .ttd.removeBlur, .trA:not(.inactiveUser).active ~ .tta.removeBlur {
+  filter: blur(0px); }
+
+.addBlur:not(.tt):not(.tta),
+.trH.tt.addBlur:not(.inactiveUser):hover, .trH:not(.inactiveUser):hover:not(.tt) > .tt.addBlur, .trH:not(.inactiveUser):hover:not(.tt) .ttd.addBlur, .trH:not(.inactiveUser):hover ~ .tta.addBlur,
+.trF.tt.addBlur:not(.inactiveUser):focus, .trF:not(.inactiveUser):focus:not(.tt) > .tt.addBlur, .trF:not(.inactiveUser):focus:not(.tt) .ttd.addBlur, .trF:not(.inactiveUser):focus ~ .tta.addBlur,
+.trFW.tt.addBlur:not(.inactiveUser):focus-within, .trFW:not(.inactiveUser):focus-within:not(.tt) > .tt.addBlur, .trFW:not(.inactiveUser):focus-within:not(.tt) .ttd.addBlur, .trFW:not(.inactiveUser):focus-within ~ .tta.addBlur,
+.trA.active.tt.addBlur:not(.inactiveUser), .trA:not(.inactiveUser).active:not(.tt) > .tt.addBlur, .trA:not(.inactiveUser).active:not(.tt) .ttd.addBlur, .trA:not(.inactiveUser).active ~ .tta.addBlur, .inactiveUser.tt.removeBlur, .inactiveUser:not(.tt) > .tt.removeBlur, .inactiveUser:not(.tt) .ttd.removeBlur, .inactiveUser ~ .tta.removeBlur,
+.trH.tt.removeBlur:not(:hover), .trH:not(:hover):not(.tt) > .tt.removeBlur, .trH:not(:hover):not(.tt) .ttd.removeBlur, .trH:not(:hover) ~ .tta.removeBlur,
+.trF.tt.removeBlur:not(:focus), .trF:not(:focus):not(.tt) > .tt.removeBlur, .trF:not(:focus):not(.tt) .ttd.removeBlur, .trF:not(:focus) ~ .tta.removeBlur,
+.trFW.tt.removeBlur:not(:focus-within), .trFW:not(:focus-within):not(.tt) > .tt.removeBlur, .trFW:not(:focus-within):not(.tt) .ttd.removeBlur, .trFW:not(:focus-within) ~ .tta.removeBlur,
+.trA.tt.removeBlur:not(.active), .trA:not(.active):not(.tt) > .tt.removeBlur, .trA:not(.active):not(.tt) .ttd.removeBlur, .trA:not(.active) ~ .tta.removeBlur {
+  filter: blur(2px); }
 
 .ghostSpaceForHoverRight:after, .ghostSpaceForHoverLeft:after, .ghostSpaceForHoverTop:after, .ghostSpaceForHoverBottom:after {
   content: " ";
