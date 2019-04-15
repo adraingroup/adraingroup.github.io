@@ -25,6 +25,18 @@
         <link id="SelectInput" rel="stylesheet" type="text/css" href="./style/snippets/Control/Select/SelectInput.css">
         <link id="TextInput" rel="stylesheet" type="text/css" href="./style/snippets/Control/Text/TextInput.css">
         <style id="customStyle" type="text/css">
+
+        @media (orientation: portrait) {
+        .grid {
+            grid-template-columns: 1fr !important; }
+        .textGrid, .centerAtFooter > * {
+            width: 100vw !important; }
+        wp-video + wp-box {
+            width: 75vw !important;
+            clip-path: polygon(46% 0px, 100% 0px, 100% 100%, 20% 70%) !important; }
+        wp-action.action1 a .wp-graphic {
+            min-width: 40px !important;
+            margin: 0px 0px !important; } }
             .centerAtFooter {
                 display: flex;
                 font-size: 2rem;

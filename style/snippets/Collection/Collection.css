@@ -15,17 +15,7 @@ wp-collection {
     grid-template-columns: 100%;
     grid-gap: 1px; }
 
-@media (orientation: portrait) {
-  .grid {
-    grid-template-columns: 1fr !important; }
-  .textGrid, .centerAtFooter > * {
-    width: 100vw !important; }
-  wp-video + wp-box {
-    width: 75vw !important;
-    clip-path: polygon(46% 0px, 100% 0px, 100% 100%, 20% 70%) !important; }
-  wp-action.action1 a .wp-graphic {
-    min-width: 40px !important;
-    margin: 10px 0px !important; } }
+
 
 .squareGrid {
   display: grid;
