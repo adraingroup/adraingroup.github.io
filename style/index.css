@@ -53,7 +53,8 @@ body {
   -moz-osx-font-smoothing: grayscale; }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace; }
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+ monospace; }
 
 ::-webkit-scrollbar {
   width: var(--scrollbarWidth);
@@ -585,27 +586,6 @@ wp-scroll-down {
 /************************************************************
   OTHER MODIFIERS
 ************************************************************/
-.inactiveUser.tt.addBlur, .inactiveUser:not(.tt) > .tt.addBlur, .inactiveUser:not(.tt) .ttd.addBlur, .inactiveUser ~ .tta.addBlur,
-.trH.tt.addBlur:not(:hover), .trH:not(:hover):not(.tt) > .tt.addBlur, .trH:not(:hover):not(.tt) .ttd.addBlur, .trH:not(:hover) ~ .tta.addBlur,
-.trF.tt.addBlur:not(:focus), .trF:not(:focus):not(.tt) > .tt.addBlur, .trF:not(:focus):not(.tt) .ttd.addBlur, .trF:not(:focus) ~ .tta.addBlur,
-.trFW.tt.addBlur:not(:focus-within), .trFW:not(:focus-within):not(.tt) > .tt.addBlur, .trFW:not(:focus-within):not(.tt) .ttd.addBlur, .trFW:not(:focus-within) ~ .tta.addBlur,
-.trA.tt.addBlur:not(.active), .trA:not(.active):not(.tt) > .tt.addBlur, .trA:not(.active):not(.tt) .ttd.addBlur, .trA:not(.active) ~ .tta.addBlur, .removeBlur:not(.tt):not(.tta),
-.trH.tt.removeBlur:not(.inactiveUser):hover, .trH:not(.inactiveUser):hover:not(.tt) > .tt.removeBlur, .trH:not(.inactiveUser):hover:not(.tt) .ttd.removeBlur, .trH:not(.inactiveUser):hover ~ .tta.removeBlur,
-.trF.tt.removeBlur:not(.inactiveUser):focus, .trF:not(.inactiveUser):focus:not(.tt) > .tt.removeBlur, .trF:not(.inactiveUser):focus:not(.tt) .ttd.removeBlur, .trF:not(.inactiveUser):focus ~ .tta.removeBlur,
-.trFW.tt.removeBlur:not(.inactiveUser):focus-within, .trFW:not(.inactiveUser):focus-within:not(.tt) > .tt.removeBlur, .trFW:not(.inactiveUser):focus-within:not(.tt) .ttd.removeBlur, .trFW:not(.inactiveUser):focus-within ~ .tta.removeBlur,
-.trA.active.tt.removeBlur:not(.inactiveUser), .trA:not(.inactiveUser).active:not(.tt) > .tt.removeBlur, .trA:not(.inactiveUser).active:not(.tt) .ttd.removeBlur, .trA:not(.inactiveUser).active ~ .tta.removeBlur {
-  filter: blur(0px); }
-
-.addBlur:not(.tt):not(.tta),
-.trH.tt.addBlur:not(.inactiveUser):hover, .trH:not(.inactiveUser):hover:not(.tt) > .tt.addBlur, .trH:not(.inactiveUser):hover:not(.tt) .ttd.addBlur, .trH:not(.inactiveUser):hover ~ .tta.addBlur,
-.trF.tt.addBlur:not(.inactiveUser):focus, .trF:not(.inactiveUser):focus:not(.tt) > .tt.addBlur, .trF:not(.inactiveUser):focus:not(.tt) .ttd.addBlur, .trF:not(.inactiveUser):focus ~ .tta.addBlur,
-.trFW.tt.addBlur:not(.inactiveUser):focus-within, .trFW:not(.inactiveUser):focus-within:not(.tt) > .tt.addBlur, .trFW:not(.inactiveUser):focus-within:not(.tt) .ttd.addBlur, .trFW:not(.inactiveUser):focus-within ~ .tta.addBlur,
-.trA.active.tt.addBlur:not(.inactiveUser), .trA:not(.inactiveUser).active:not(.tt) > .tt.addBlur, .trA:not(.inactiveUser).active:not(.tt) .ttd.addBlur, .trA:not(.inactiveUser).active ~ .tta.addBlur, .inactiveUser.tt.removeBlur, .inactiveUser:not(.tt) > .tt.removeBlur, .inactiveUser:not(.tt) .ttd.removeBlur, .inactiveUser ~ .tta.removeBlur,
-.trH.tt.removeBlur:not(:hover), .trH:not(:hover):not(.tt) > .tt.removeBlur, .trH:not(:hover):not(.tt) .ttd.removeBlur, .trH:not(:hover) ~ .tta.removeBlur,
-.trF.tt.removeBlur:not(:focus), .trF:not(:focus):not(.tt) > .tt.removeBlur, .trF:not(:focus):not(.tt) .ttd.removeBlur, .trF:not(:focus) ~ .tta.removeBlur,
-.trFW.tt.removeBlur:not(:focus-within), .trFW:not(:focus-within):not(.tt) > .tt.removeBlur, .trFW:not(:focus-within):not(.tt) .ttd.removeBlur, .trFW:not(:focus-within) ~ .tta.removeBlur,
-.trA.tt.removeBlur:not(.active), .trA:not(.active):not(.tt) > .tt.removeBlur, .trA:not(.active):not(.tt) .ttd.removeBlur, .trA:not(.active) ~ .tta.removeBlur {
-  filter: blur(2px); }
 
 .ghostSpaceForHoverRight:after, .ghostSpaceForHoverLeft:after, .ghostSpaceForHoverTop:after, .ghostSpaceForHoverBottom:after {
   content: " ";
